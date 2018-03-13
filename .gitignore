@@ -1,0 +1,11 @@
+*.pyc
+.project
+.pydevproject
+.settings/
+.log
+*.log
+*.log.*
+gunicorn*
+static_files/
+.vscode/
+*.old
