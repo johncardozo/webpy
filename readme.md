@@ -25,3 +25,7 @@ https://www.sqlite.org/2018/sqlite-tools-win32-x86-3220000.zip
 
     .quit
 
+# Comandos utiles para construir la capa de datos
+
+http://webpy.readthedocs.io/en/latest/db.html
+
