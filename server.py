@@ -4,9 +4,9 @@ from listing import Listing
 from index import Index
 
 urls = (
+    '/', 'Index',
     '/list', 'Listing',
-    '/item', 'Item',
-    '/(.*)', 'Index'    
+    '/item', 'Item'
 )
 
 if __name__ == "__main__":

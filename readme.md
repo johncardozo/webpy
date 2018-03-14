@@ -21,6 +21,10 @@ https://www.sqlite.org/2018/sqlite-tools-win32-x86-3220000.zip
 
     .tables
 
+# Ver encabezados de columnas al ejecutar un SELECT
+
+    .headers on
+
 # Salir de la consola de sqlite3
 
     .quit

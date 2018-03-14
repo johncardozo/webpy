@@ -1,7 +1,7 @@
 import web
 
-render = web.template.render('templates/')
+render = web.template.render('templates/', base='layout')
 
 class Index:
-    def GET(self, name):
-        return render.index(name)
+    def GET(self):
+        return render.index()
