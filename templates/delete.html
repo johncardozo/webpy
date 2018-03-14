@@ -1,0 +1,17 @@
+$def with (id)
+
+<div class="container">
+    <section class="jumbotron">    
+        <h1 class="jumbotron-heading">Eliminar tarea</h1>
+        <hr>
+        <div class="alert alert-danger" role="alert">
+        Esta seguro que desea eliminar la tarea # $id ?
+        </div>
+
+        <form action="/delete/$id" method="POST">
+            <input type="hidden" name="id" value="$id">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Eliminar la tarea</button>
+        </form>
+        <a class="btn btn-secondary btn-lg btn-block" href="/list">Ir a la lista de tareas</a>  
+    </section>
+</div>
