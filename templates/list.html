@@ -1,9 +1,14 @@
 $def with (items)
 
 <div class="container">
-    <h1 class="jumbotron-heading">Lista de Tareas</h1>
-    <ul>
-    $for item in items:
-        <li><a href="/item/$item.id">$item.body</a><br><small>$item.created</small></li>
-    </ul>        
+    <section class="jumbotron">    
+        <h1 class="jumbotron-heading">Lista de Tareas</h1>
+        <hr>
+        <a href="/create" class="btn btn-primary btn-sm pull-right">Nueva tarea</a>
+        
+        <ul style="margin-top:10px;">
+        $for item in items:
+            <li><a href="/item/$item.id">$item.body</a><br><small>$item.created ($datestr(item.created))</small></li>
+        </ul>        
+    </section>
 </div>

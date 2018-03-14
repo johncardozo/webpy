@@ -1,7 +1,11 @@
 import web
 import db
 
-render = web.template.render('templates/', base='layout')
+t_globals = {
+    'datestr': web.datestr
+}
+
+render = web.template.render('templates/', base='layout', globals=t_globals)
 
 class Listing:
     def GET(self):

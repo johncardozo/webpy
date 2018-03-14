@@ -1,0 +1,44 @@
+<section class="jumbotron">
+    <div class="container">
+        <h1 class="jumbotron-heading">Nueva tarea</h1>
+
+        <div class="col-md-12 order-md-1">
+
+            <form class="needs-validation" novalidate method="POST" action="/create">
+
+                <div class="mb-3">
+                    <label for="username">Identificador</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">#</span>
+                        </div>
+                        <input type="text" class="form-control" id="identificador" name="identificador" placeholder="identificador de la tarea" required>
+                        <div class="invalid-feedback" style="width: 100%;">
+                            El identificador es requerido
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="username">Descripcion</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">?</span>
+                        </div>
+                        <input type="text" class="form-control" id="descripcion" name="descripcion" placeholder="descripcion de la tarea" required>
+                        <div class="invalid-feedback" style="width: 100%;">
+                            La descripcion es requerida
+                        </div>
+                    </div>
+                </div>
+              
+
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Crear tarea</button>
+        <a class="btn btn-secondary btn-lg btn-block" href="/list">Ir a la lista de tareas</a>
+        </form>
+
+
+    </div>
+</section>
