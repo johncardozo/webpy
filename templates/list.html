@@ -9,7 +9,7 @@ $def with (items)
         <ul style="margin-top:10px;">
         $for item in items:
             <li>
-                <a href="/item/$item.id">$item.body</a> <small><a href="/delete/$item.id"><span class="badge badge-danger">X</span></a></small>
+                <a href="/item/$item.id">$item.body</a> <small>(est. $item.estimated_time min)</small> <small><a href="/delete/$item.id"><span class="badge badge-danger">X</span></a></small>
                 <br>
                 <small>$item.created ($datestr(item.created))</small>
             

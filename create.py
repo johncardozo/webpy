@@ -12,10 +12,10 @@ class Create:
         data = web.input()
 
         # Extrae los datos recibidos
-        identificador, descripcion = int(data.identificador), data.descripcion
+        tiempo, descripcion = int(data.tiempo), data.descripcion
         
         # Crea el item en la base de datos
-        db.insert(identificador, descripcion)
+        db.insert(descripcion, tiempo)
         
         # Redirecciona a la pagina de lista de tareas
         raise web.seeother('/list')

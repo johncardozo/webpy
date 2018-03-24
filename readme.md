@@ -1,5 +1,11 @@
 # webpy
 
+# Creación de base de datos
+    sqlite3 tasks.db
+
+# Ejecución de script de base de datos (consola de sqlite3)
+    sqlite> .read script.sql
+
 # Ejecutar la aplicacion
     python server.py
 

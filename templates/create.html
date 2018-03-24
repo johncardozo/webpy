@@ -7,20 +7,7 @@
             <form class="needs-validation" novalidate method="POST" action="/create">
 
                 <div class="mb-3">
-                    <label for="username">Identificador</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">#</span>
-                        </div>
-                        <input type="text" class="form-control" id="identificador" name="identificador" placeholder="identificador de la tarea" required>
-                        <div class="invalid-feedback" style="width: 100%;">
-                            El identificador es requerido
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mb-3">
-                    <label for="username">Descripcion</label>
+                    <label for="descripcion">Descripcion</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text">?</span>
@@ -32,6 +19,15 @@
                     </div>
                 </div>
               
+                <div class="mb-3">
+                    <label for="tiempo">Tiempo estimado</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">#</span>
+                        </div>
+                        <input type="text" class="form-control" id="tiempo" name="tiempo" placeholder="tiempo estimado" required>
+                    </div>
+                </div>                
 
         </div>
         <hr class="mb-4">
